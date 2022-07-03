@@ -1,0 +1,41 @@
+{
+  "name": "bar-menu",
+  "version": "1.0.0",
+  "description": "reusable components for a filterable bar menu",
+  "main": "dst/index.cjs",
+  "module": "dst/index.module.js",
+  "source": "src/index.js",
+  "scripts": {
+    "build": "rimraf dst && microbundle build --jsx React.createElement --jsxFragment React.Fragment -f modern,es,cjs",
+    "watch": "microbundle watch --jsx React.createElement --jsxFragment React.Fragment -f modern,es,cjs",
+    "prettier": "prettier --write 'src/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeman-lab/bar-menu.git"
+  },
+  "author": "freeman-lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freeman-lab/bar-menu/issues"
+  },
+  "files": [
+    "dst"
+  ],
+  "dependencies": {
+    "@theme-ui/color": ">=0.11.1"
+  },
+  "peerDependencies": {
+    "next": "^12.0.4",
+    "react": "^17.0.2 || ^18.2.0",
+    "react-dom": "^17.0.2 || ^18.2.0",
+    "theme-ui": ">=0.13.1",
+    "@emotion/react": "^11.7.1"
+  },
+  "devDependencies": {
+    "microbundle": "^0.14.0",
+    "prettier": "^2.2.1",
+    "rimraf": "3.0.2"
+  },
+  "homepage": "https://github.com/freeman-lab/bar-menu#readme"
+}
