@@ -1,5 +1,5 @@
-import React from "react";
-import { Grid } from "theme-ui";
+import React from 'react'
+import { Grid } from 'theme-ui'
 
 const Row = ({ columns = [6, 8, 12, 12], children, sx, ...props }) => {
   return (
@@ -10,7 +10,7 @@ const Row = ({ columns = [6, 8, 12, 12], children, sx, ...props }) => {
     >
       {children}
     </Grid>
-  );
-};
+  )
+}
 
-export default Row;
+export default Row

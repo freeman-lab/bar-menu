@@ -1,8 +1,8 @@
-import React from "react";
-import { Box } from "theme-ui";
-import Row from "./row";
-import Column from "./column";
-import { COLORS } from "./constants";
+import React from 'react'
+import { Box } from 'theme-ui'
+import Row from './row'
+import Column from './column'
+import { COLORS } from './constants'
 
 const Filter = ({ label, keys, values, setValues }) => {
   return (
@@ -13,45 +13,45 @@ const Filter = ({ label, keys, values, setValues }) => {
         mb: [4, 4, 4, 5],
       }}
     >
-      {label}:{" "}
+      {label}:{' '}
       {keys.map((d, i) => {
         return (
           <span key={i}>
             <Box
-              as="span"
+              as='span'
               sx={{
-                cursor: "pointer",
-                color: values[d] && COLORS[d] ? COLORS[d] : "text",
-                textDecoration: values[d] ? "underline" : "none",
-                userSelect: "none",
+                cursor: 'pointer',
+                color: values[d] && COLORS[d] ? COLORS[d] : 'text',
+                textDecoration: values[d] ? 'underline' : 'none',
+                userSelect: 'none',
               }}
               onClick={() =>
                 setValues((prev) => {
-                  if (d === "all") {
-                    const obj = {};
+                  if (d === 'all') {
+                    const obj = {}
                     Object.keys(values).forEach((k) => {
-                      obj[k] = true;
-                    });
-                    return obj;
+                      obj[k] = true
+                    })
+                    return obj
                   } else {
-                    const obj = {};
+                    const obj = {}
                     Object.keys(values).forEach((k) => {
-                      obj[k] = false;
-                    });
-                    obj[d] = true;
-                    return obj;
+                      obj[k] = false
+                    })
+                    obj[d] = true
+                    return obj
                   }
                 })
               }
             >
               {d}
             </Box>
-            {i < keys.length - 1 && <Box as="span"> • </Box>}
+            {i < keys.length - 1 && <Box as='span'> • </Box>}
           </span>
-        );
+        )
       })}
     </Box>
-  );
-};
+  )
+}
 
-export default Filter;
+export default Filter

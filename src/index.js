@@ -1,1 +1,1 @@
-export { default as BarMenu } from "./bar-menu";
+export { default as BarMenu } from './bar-menu'

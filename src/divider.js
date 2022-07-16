@@ -1,6 +1,6 @@
-import React from "react";
-import Row from "./row";
-import Column from "./column";
+import React from 'react'
+import Row from './row'
+import Column from './column'
 
 const Divider = () => {
   return (
@@ -21,11 +21,11 @@ const Divider = () => {
           pb: [3],
           opacity: 0.75,
           borderBottom: ({ colors }) => `solid 1px ${colors.muted}`,
-          display: ["none", "initial", "initial", "initial"],
+          display: ['none', 'initial', 'initial', 'initial'],
         }}
       />
     </Row>
-  );
-};
+  )
+}
 
-export default Divider;
+export default Divider

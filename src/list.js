@@ -1,9 +1,9 @@
-import React from "react";
-import { Box, Flex } from "theme-ui";
-import { formatNumber } from "./utils";
-import Row from "./row";
-import Column from "./column";
-import { COLORS } from "./constants";
+import React from 'react'
+import { Box, Flex } from 'theme-ui'
+import { formatNumber } from './utils'
+import Row from './row'
+import Column from './column'
+import { COLORS } from './constants'
 
 const List = ({ contents, separator, setModal, setSelected }) => {
   return (
@@ -19,23 +19,23 @@ const List = ({ contents, separator, setModal, setSelected }) => {
                   pt: [2, 0, 0, 0],
                   pb: [2, 0, 0, 0],
                   gap: [4],
-                  cursor: "pointer",
-                  width: ["100%", "fit-content", "fit-content", "fit-content"],
-                  transition: "opacity 0.15s",
-                  "@media (hover: hover) and (pointer: fine)": {
-                    "&:hover": {
+                  cursor: 'pointer',
+                  width: ['100%', 'fit-content', 'fit-content', 'fit-content'],
+                  transition: 'opacity 0.15s',
+                  '@media (hover: hover) and (pointer: fine)': {
+                    '&:hover': {
                       opacity: 0.7,
                     },
                   },
                 }}
                 onClick={() => {
-                  setModal(true);
-                  setSelected({ ...d, number: d.number });
+                  setModal(true)
+                  setSelected({ ...d, number: d.number })
                 }}
               >
                 <Box
                   sx={{
-                    mt: ["4px", "8px", "8px", "8px"],
+                    mt: ['4px', '8px', '8px', '8px'],
                     color: COLORS[d.family],
                     flexShrink: 0,
                     fontSize: [1, 2, 2, 2],
@@ -46,17 +46,17 @@ const List = ({ contents, separator, setModal, setSelected }) => {
                 </Box>
                 <Box sx={{}}>
                   <Box sx={{ fontSize: [3, 4, 4, 4] }}>{d.name}</Box>
-                  <Box sx={{ fontSize: [2, 3, 3, 3], fontStyle: "italic" }}>
+                  <Box sx={{ fontSize: [2, 3, 3, 3], fontStyle: 'italic' }}>
                     {d.keywords.join(` ${separator} `)}
                   </Box>
                 </Box>
               </Flex>
-            );
+            )
           })}
         </Row>
       </Column>
     </Row>
-  );
-};
+  )
+}
 
-export default List;
+export default List

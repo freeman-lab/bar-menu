@@ -1,6 +1,6 @@
 {
   "name": "bar-menu",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "reusable components for a filterable bar menu",
   "main": "dst/index.cjs",
   "module": "dst/index.module.js",
@@ -22,6 +22,15 @@
   "files": [
     "dst"
   ],
+  "prettier": {
+    "$schema": "http://json.schemastore.org/prettierrc",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 80,
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": true
+  },
   "dependencies": {
     "@theme-ui/color": ">=0.11.1"
   },
