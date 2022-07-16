@@ -1,6 +1,6 @@
 {
   "name": "bar-menu",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "reusable components for a filterable bar menu",
   "main": "dst/index.cjs",
   "module": "dst/index.module.js",

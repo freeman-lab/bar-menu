@@ -262,14 +262,7 @@ const BarMenu = ({
                             <Box
                               sx={{ mt: [3, 4, 4, 4], fontSize: [3, 4, 4, 4] }}
                             >
-                              {selected.recipe} Serve in{" "}
-                              {selected.glass === "old-fashioned" ? "an" : "a"}{" "}
-                              {selected.glass}
-                              {selected.glass === "collins" ||
-                              selected.glass === "old-fashioned"
-                                ? " glass"
-                                : ""}
-                              .
+                              {selected.recipe}
                             </Box>
                           </Column>
                         </Row>
