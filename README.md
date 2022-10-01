@@ -52,14 +52,14 @@ And `sections` is a list of named menu sections each including a list of drinks
 
 ```jsx
 [
-	{
-	  name: 'Spritzes',
-	  description: 'Light and refreshing',
-	  contents: [
-	    'Americano',
-	    ...
-	  ],
-	},
+  {
+    name: 'Spritzes',
+    description: 'Light and refreshing',
+    contents: [
+      'Americano',
+      ...
+    ],
+  },
 ]
 ```
 
