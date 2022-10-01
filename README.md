@@ -64,3 +64,10 @@ And `sections` is a list of named menu sections each including a list of drinks
 ```
 
 For a full example, see [freemansbar.com](https://freemansbar.com).
+
+### styling
+
+This component assume that you are using `theme-ui`, which is where you style the page by selecting font, color, etc.
+
+Here are a couple examples.
+
