@@ -4,9 +4,9 @@ React components for a filterable bar menu.
 
 ## usage
 
-Install with `npm` and then use the component, which renders the menu based on the configuration. Assumes that you are using `theme-ui`, which is where you style the page by selecting font, color, etc.
+Install with `npm` and then use the component, which renders a menu based on the configuration. Assumes that you are using `theme-ui`, which is where you style the page by selecting font, color, etc.
 
-```
+```jsx
 import { BarMenu } from 'bar-menu'
 
 const sections = [{name: '', description: '', contents: []}]
@@ -22,7 +22,7 @@ const cocktails =
 
 Where `cocktails` is an array of recipes schematized as in the following example:
 
-```
+```jsx
 {
   name: 'Americano',
   family: 'highball',
@@ -50,7 +50,7 @@ Where `cocktails` is an array of recipes schematized as in the following example
 
 And `sections` is a list of named menu sections each including a list of drinks
 
-```
+```jsx
 [
 	{
 	  name: 'Spritzes',
