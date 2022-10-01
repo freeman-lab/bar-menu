@@ -67,7 +67,7 @@ For a full example, see [freemansbar.com](https://freemansbar.com).
 
 ### styling
 
-This component assume that you are using `theme-ui`, which is where you style the page by selecting font, color, etc.
+This component assume that you are using `theme-ui`, which is where you style the page by selecting font, color, etc. Here are a couple examples of differently styled pages.
 
-Here are a couple examples.
-
+<img width="1440" alt="CleanShot 2022-09-30 at 18 15 10@2x" src="https://user-images.githubusercontent.com/3387500/193377527-10837024-5653-406f-9767-00c38124deec.png">
+<img width="1440" alt="CleanShot 2022-09-30 at 18 12 54@2x" src="https://user-images.githubusercontent.com/3387500/193377528-a94c2bc0-5ce2-44d3-8299-97817bbbff80.png">
