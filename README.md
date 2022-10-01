@@ -1,6 +1,6 @@
 # bar-menu
 
-React components for a filterable bar menu.
+React components for a filterable bar menu. See an [example](https://freemansbar.com).
 
 ## usage
 
