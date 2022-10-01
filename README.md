@@ -9,9 +9,6 @@ Install with `npm` and then use the component, which renders a menu based on the
 ```jsx
 import { BarMenu } from 'bar-menu'
 
-const sections = [{name: '', description: '', contents: []}]
-const cocktails = 
-
 <BarMenu
   title={'name'}
   sections={sections}
