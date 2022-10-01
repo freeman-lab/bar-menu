@@ -60,7 +60,7 @@ And `sections` is a list of named menu sections each including a list of drinks
 ]
 ```
 
-For a full example, see [freemansbar.com](https://freemansbar.com).
+See a [full example](https://freemansbar.com).
 
 ### styling
 
